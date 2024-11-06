@@ -1072,4 +1072,4 @@ class FAQDetails(APIView):
     def delete(self, request, id, format=None):
         ins = self.get_object(id)
         ins.delete()
-        return JsonResponse({'success': True, 'data': 'Successfully deleted'})  
+        return JsonResponse({'success': True, 'data': 'Successfully deleted record'})  
