@@ -1027,7 +1027,7 @@ class CategoryDetailes(APIView):
         port_ins=self.get_object(id)
         port_ins.status=False
         port_ins.save()
-        return Response({"success":True,"data":"category Deleted Successfully"})
+        return Response({"success":True,"data":"Category Deleted Successfully"})
 
 
 class FAQList(APIView):
@@ -1072,4 +1072,4 @@ class FAQDetails(APIView):
     def delete(self, request, id, format=None):
         ins = self.get_object(id)
         ins.delete()
-        return JsonResponse({'success': True, 'data': 'Successfully deleted record'})  
+        return JsonResponse({'success': True, 'data': 'Successfully Deleted record'})  
